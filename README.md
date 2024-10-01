@@ -42,101 +42,16 @@ maupun diperbarui data dapat ditampilkan
 11. Mengosongkan semua field input menggunkan metode `Bersih`
    - ![image](https://github.com/user-attachments/assets/88459937-b623-42c3-b370-c23464b58ff3)
 
+## 🚀 OUPUT
+- Memasukkan Data
+- ![image](https://github.com/user-attachments/assets/d1e06085-1750-4dd0-ad63-7952f5a0d174)
 
+- Menghapus Data
+- ![image](https://github.com/user-attachments/assets/5be8cf24-c939-46b3-99a2-e8c42641e301)
 
+- Memperbarui Data
+- ![image](https://github.com/user-attachments/assets/24066ace-858f-4fc1-a7b4-0688e26746e6)
 
-
-
-
-   
-
-
-
-
-
-
-
-
-
-        📌 DbUtils
-        . Penjelasan mengenai kelas DbUtils.
-        . Metode untuk mengonversi `ResultSet` menjadi `TableModel`.
-        . Langkah-Langkah 
-        
-        📌 Java Swing
-        . Penjelasan Java Swing
-        . Komponen yang digunakan dalam aplikasi.
-        . Operasi CRUD menggunakan Java Swing.
-
-## 📦DbUtils 
-🔗 Kelas DbUtilsmerupakan utilitas yang diguakan untuk mengonversi objek ResultSet dari database menjadi model tabel yang dapat digunakan dalam komponen GUI, seperti tabel di Java Swing.
-
-🔗 Metode utama dalam kelas DbUtils  yaitu resultSetToTableModel. Metode ini mengambil objek ResultSet kemudian mengonversinya menjadi objek TableModel. proses ini dilakukan untuk mengisi data dalam tabel Swing.
-
-🔗 Langkah - langkah :
-- Mengambil Metadata Menggunakan `ResultSetMetaData` untuk mendapatkan jumlah kolom dan nama kolom dari `ResultSet`.
-- Melakukan Iterasi melalui kolom untuk menyimpan nama kolom dalam `Vector`.
-- Melakukan loop untuk mengiterasi setiap baris dalam `ResultSet`, kemudian menyimpan nilai kolom dalam vector baru untuk setiap baris.
-- Setelah semua data terkumpul, kemudian mengembalikan objek `DefaultTableModel` yang siap digunakan untuk mengisi tabel di Swing.
-
-## 🎨Java Swing 
-🔗 Java Swing adalah toolkit GUI (Graphical User Interface) yang merupakan bagian dari Java Foundation Classes (JFC). java swing juga dapat terhubung dengan database dengan mengoprasikan CRUD. 
-
-🔗 Komponen yang digunakan  
-
-- JFrame: jendela utama aplikasi yang menampung semua komponen lainnya.
-  - Nama variabel: Mahasiswa
-   
-- JLabel: Menampilkan teks statis yang berfungsi sebagai label untuk field input (NIM, NAMA, PROGRAM STUDI).
-  - Nama variabel: jLabel1, jLabel2, jLabel3, jLabel4
-   
-- JTextField: Field input untuk menerima data dari pengguna, seperti NIM, nama mahasiswa, dan program studi.
-  - Nama variabel: txtNim, txtNama, txtPd
-
-- JToggleButton : Tombol yang digunakan untuk melakukan operasi CRUD (Create, Read, Update, Delete) pada data mahasiswa.
-  - Nama variabel: btnInsert, btnUpdate, btnDelete
-
-- JTable: Menampilkan daftar mahasiswa dalam bentuk tabel, termasuk NIM, nama, dan program studi.
-  - Nama variabel: tblMahasiswa
- 
-- JScrollPane: Menyediakan scroll bar untuk tabel mahasiswa agar pengguna dapat menggulir jika data melebihi ukuran tampilan.
-  - Nama variabel: jScrollPane1
- 
-🔗 CRUD 
-- Create (Insert)
-  - Metode: btnInsertActionPerformed
-  - Proses:
-    1. Memeriksa apakah semua field diisi.
-    2. Menghubungkan ke database menggunakan JDBC.
-    3. Menyiapkan pernyataan SQL untuk menambahkan data mahasiswa baru ke tabel.
-    4. Menjalankan pernyataan SQL dan melakukan commit untuk menyimpan perubahan.
-    5. Menampilkan pesan sukses atau gagal kepada pengguna.
-       
-- Read (Show)
-  - Metode: showTable
-  - Proses:
-    1. Menghubungkan ke database dan mengambil semua data mahasiswa.
-    2. Mengatur model tabel (tblMahasiswa) untuk menampilkan hasil query.
-    3. Menutup koneksi setelah data ditampilkan.
-       
-- Update
-  - Metode: btnUpdateActionPerformed
-  - Proses:
-    1. Memeriksa apakah semua field diisi.
-    2. Menghubungkan ke database dan menyiapkan pernyataan SQL untuk memperbarui data mahasiswa berdasarkan NIM.
-    3. Menjalankan pernyataan SQL dan memberikan umpan balik kepada pengguna mengenai keberhasilan atau kegagalan pembaruan.
-       
-- Delete
-  - Metode: btnDeleteActionPerformed
-  - Proses:
-    1. Mengambil NIM dari field input untuk menentukan data mana yang akan dihapus.
-    2. Meminta konfirmasi dari pengguna sebelum melanjutkan penghapusan.
-    3. Menghubungkan ke database dan menyiapkan pernyataan SQL untuk menghapus data mahasiswa.
-    4. Menjalankan pernyataan SQL dan menutup koneksi setelah selesai.
-
-## 📝 Kesimpulan
-Laporan pratikum ini menjelaskan pengembangan aplikasi desktop menggunakan Java Swing untuk mengelola data mahasiswa. Aplikasi ini memungkinkan pengguna untuk melakukan operasi CRUD (Create, Read, Update, Delete) dengan antarmuka pengguna yang intuitif dan responsif. 
- 
 
 
 
