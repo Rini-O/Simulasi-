@@ -21,10 +21,32 @@ Laporan ini membuat aplikasi menggunakan Java Swing untuk menampilkan dan mengel
 
 4. Membuat GUI untuk menampilkan data Buku
    - Komponen yang disisipkan salah satunya yaitu button. seperti Insert, Delete dan Update agar Ketika diisi, dihapus 
-maupun diperbarui dta dapat ditampilkan
+maupun diperbarui data dapat ditampilkan
+   
    ![image](https://github.com/user-attachments/assets/558c568a-5a53-4f3a-bcd8-10cd4ef9ff59)
 
-5. 
+5. Membuat method showTable
+  - ![image](https://github.com/user-attachments/assets/148cc1cc-65f5-402e-aeff-7b80c3ddfa74)
+  - Membuat TableMouseClicked
+- ![image](https://github.com/user-attachments/assets/526342c5-d0dd-4488-b968-f4ca82c736eb)
+
+8. Memasukkan data dengan button insert
+   ![image](https://github.com/user-attachments/assets/50a5af54-e223-4688-b399-e3dd621c705c)
+
+9. Memperbarui data dengan button Update
+   ![image](https://github.com/user-attachments/assets/18e9aaf6-0461-4e3f-9d1a-2e5c2afb8b3c)
+
+10. Menghapus data dengan button
+   - ![image](https://github.com/user-attachments/assets/e9a68acc-8f71-4ca3-85a8-79dfa94237e9)
+
+11. Mengosongkan semua field input menggunkan metode `Bersih`
+   - ![image](https://github.com/user-attachments/assets/88459937-b623-42c3-b370-c23464b58ff3)
+
+
+
+
+
+
 
    
 
